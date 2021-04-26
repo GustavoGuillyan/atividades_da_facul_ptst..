@@ -1,0 +1,47 @@
+programa
+{
+inclua biblioteca Matematica --> mat	
+	funcao inicio()
+	{
+real la
+real lb
+real lc
+real p1
+real p
+real area
+real raiz
+
+	escreva("Este algaritmo vai determinar o perimerimetro do triangulo e sua area", "\n")
+	escreva("Digite o valor do  lado A", "\n")
+	leia(la)
+	escreva
+("Digite o valor do lado B", "\n")
+	leia(lb)
+	escreva("Digite o valor do lado C", "\n")
+	leia(lc)
+		se((la+lb>lc)e(lb+lc>la)e(la+lc>lb)){
+			p=(la+lb+lc)/2
+			p1=la+lb+lc
+			area=p*((p-la)*(p-lb)*(p-lc))
+			area=mat.raiz(area, 2.0)
+			escreva("A area do triangulo é, ", area, "\n")
+			escreva("O perimetro desse triangulo é, ", p1, "\n" ) 
+									}
+		senao{
+			escreva("Não existe um triangulo com esses lados definidos")							
+		}
+
+	}
+}
+
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 615; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
